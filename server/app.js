@@ -14,9 +14,8 @@ app.get("/", function(req,res){
   res.sendFile(path.resolve("server/public/views/index.html"));
 });
 
-app.use("/listings", listings);
-
 app.use(bodyParser.urlencoded({extended: true}));
+app.use("/listings", listings);
 
 app.listen(app.get("port"), function(req,res){
   console.log("Listening on port: ", app.get("port"));
