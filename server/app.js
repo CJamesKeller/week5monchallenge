@@ -8,6 +8,12 @@ var listings = require("./routes/listings");
 app.set("port", (process.env.port || 5000));
 
 app.use(express.static("./server/public"));
+
+//*** Had to add the below to get initial page
+app.get("/", function(req,res){
+  res.sendFile(path.resolve("server/public/views/index.html"));
+});
+
 app.use("/listings", listings);
 
 app.use(bodyParser.urlencoded({extended: true}));

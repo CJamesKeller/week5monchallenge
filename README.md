@@ -2,8 +2,8 @@
 
 ## Overview
 
-This Code Challenge is different from the rest. This time, you will need to debug an existing code base. You will need your 
-complete knowledge of the past 4 weeks to successfully navigate the problems that are in the code. 
+This Code Challenge is different from the rest. This time, you will need to debug an existing code base. You will need your
+complete knowledge of the past 4 weeks to successfully navigate the problems that are in the code.
 
 Keep in mind, often debugging is stressful for a couple reasons:
 
@@ -21,19 +21,25 @@ Meaning, in your own words, explain the problem and why your solution fixes the 
 ## TODO
 
 ### Base Mode
-[ ] - Mongo does not seem to be connecting correctly.
+[X] - Mongo does not seem to be connecting correctly.
+<!-- Corrected port number for Mongo -->
 
-[ ] - The models have a conflict.
+[X] - The models have a conflict.
+<!-- First parameter of models were the same,
+but model goes: ("model", schema, "collection")  -->
 
-[ ] - Index.html is not being properly served.
+[X] - Index.html is not being properly served.
+<!-- Added GET for initial page load -->
 
 [ ] - Posting information does not seem to come up correctly on the req.body as intended.
 
-[ ] - The information from the database is not being appended to the DOM.
+[X] - The information from the database is not being appended to the DOM.
+<!-- Added appendListings call -->
 
 
 ### Hard Mode
-[ ] - All the information being appended on the DOM is not lining up together in their respective row. 
+[X] - All the information being appended on the DOM is not lining up together in their respective row.
+<!-- This was already done, apparently -->
 
 
 ### Pro Mode
